@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+</head>
+<body>
+    <div id="main-content">
+        <div class="nav-bar">
+
+            <div class="add-project">
+                <div class="title-section">Add Project</div>
+                <form method="post">
+                    <div>
+                        <label for="name-project">Project:</label>
+                        <input id="name-project" type="text" placeholder="Project name">
+                    </div>
+                    <div>
+                        <label for="due-date">Due Date:</label>
+                        <input id="due-date" type="date">
+                    </div>
+                    <div>
+                        <label for="priority">Priority:</label>
+                        <select id="priority">
+                            <option disabled selected>Select Priority</option>
+                            <option>High Priority</option>
+                            <option>Medium Priority</option>
+                            <option>Low Priority</option>
+                            <option>No priority</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button id="create-project" type="submit">Create Project</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="projects-section">
+                <div id="button-menu" class="title-section">My Projects</div>
+                <div class="sub-section">On going Projects</div>
+                <ul id="active-projects"></ul> 
+                <div class="sub-section">Projects Realized</div>
+                <ul id="closed-projects"></ul> 
+            </div>
+
+            <dialog>
+                
+            </dialog>
+
+        </div>
+
+
+        <div class="content">
+          
+        </div>
+
+    </div>
+    
+</body>
+</html>
